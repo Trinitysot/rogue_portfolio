@@ -1,0 +1,912 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #252422;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #252422;
+}
+
+h4 {
+  font-size: 20px;
+  color: #252422;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #403D39;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  background-color: #ffff;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #E8E8EA;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 50px;
+}
+
+.nav #navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav #navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+.nav #navbar li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #252422;
+  transition: 0.3s ease;
+}
+
+.nav.active {
+  background-color: #252422;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav #navbar li a:hover,
+.nav #navbar li a.active {
+  color: #EB5E28;
+}
+
+.nav #navbar li a.active::after,
+.nav #navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #EB5E28;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#close {
+  display: none;
+}
+
+#hero {
+  background-image: url(images/image-landscape-fill-549a2a09-7938-476b-9907-64048658c7f1-default_0.jpg);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 50% right 30%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#product1 {
+  text-align: center;
+}
+
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+#product1 .pro {
+  width: 23%; 
+  min-width: 250px;
+  padding: 10px 12px;
+  
+  cursor: pointer;
+  margin: 15px 0;
+  transition: 0.2s ease;
+}
+
+#product1 .pro img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#product1 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product1 .pro .des span {
+  color: #403D39;
+  font-size: 10px;
+}
+
+#product1 .pro .des h5 {
+  padding-top: 7px;
+  color: #252422;
+  font-size: 14px;
+}
+
+#product1 .pro .des i {
+  font-size: 12px;
+}
+
+#product1 .pro .des h4 {
+  padding-top: 7px;
+  color: #252422;
+  font-size: 14px;
+}
+
+#product1 .pro:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("images/0000363.jpeg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner span {
+  color: #EB5E28;
+  font-weight: 700;
+}
+
+#banner h4 {
+  margin-bottom: 20px;
+  color: #403D39;
+}
+
+#banner button {
+  padding: 12px 12px 12px 12px;
+  border-radius: 10px;
+  border: none; 
+  background-color: #403D39;
+  color: #CCC5B9;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#banner button:hover {
+  cursor: pointer;
+  background-color: #CCC5B9;
+  color: #403D39;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+
+#sm-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 100px 20px 100px;
+}
+
+
+#sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("images/ladies/image-landscape-fill-f82983b4-e88c-44c2-b639-74bc59764ab3-default_0.jpg");
+  min-width: 800px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+#sm-banner h4 {
+  color: #CCC5B9;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#sm-banner h2 {
+  color: #CCC5B9;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#sm-banner .banner-box:hover {
+  cursor: pointer;
+  background-color: #CCC5B9;
+  color: #403D39;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+
+#sm-banner .banner-box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("images/mens/T0655061340-ult1.jpg");
+  min-width: 800px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+#sm-banner .banner-box1:hover {
+  cursor: pointer;
+  background-color: #CCC5B9;
+  color: #403D39;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 100px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+#banner3 .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("images/ladies/02569286400-p.jpg");
+  min-width: 500px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+#banner3 .banner-box:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+
+#banner3 h4 {
+  color: #252422;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#banner3 h2 {
+  color: #252422;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#banner3 .banner-box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("images/ladies/12150012040-001-a4.jpg");
+  min-width: 500px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+#banner3 .banner-box2:hover {
+  cursor: pointer;
+  background-color: #252422;
+  color: #CCC5B9;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+
+#banner3 .banner-box2 h4 {
+  color: #252422;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#banner3 .banner-box2 h2 {
+  color: #252422;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#banner3 .banner-box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("images/ladies/16351310600-p.jpg");
+  min-width: 500px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+#banner3 .banner-box3:hover {
+  cursor: pointer;
+  background-color: #252422;
+  color: #CCC5B9;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+
+#banner3 .banner-box3 h4 {
+  color: #252422;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#banner3 .banner-box3 h2 {
+  color: #252422;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #252422;
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+}
+
+#newsletter .newstext h4 {
+  color: #CCC5B9;
+  font-weight: 200;
+  padding-left: 120px;
+}
+
+#newsletter input {
+  height: 2.125rem; 
+  padding: 0 1.25em;
+  font-size: 14px;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 2px;
+}
+
+#newsletter .form button {
+  padding: 6px 6px 6px 6px;
+  border-radius: 5px;
+  border: none; 
+  background-color: #CCC5B9;
+  color: #403D39;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 20px 120px 20px 5px
+}
+
+#newsletter .form button:hover {
+  background-color:#252422;
+  color:#CCC5B9;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+footer {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  color: #252422;
+}
+
+footer .logo {
+  max-width: 200px;
+  margin-bottom: 30px;
+}
+
+footer h4 {
+  font-size: 15px;
+  padding-bottom: 7px;
+  color: #252422;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 0 0 8px 0;
+  color: #252422;
+}
+
+footer a {
+  font-size: 12px;
+  margin: 0 0 8px 0;
+  text-decoration: none;
+  color: #252422;
+}
+
+footer .socials {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+footer .socials h4 {
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+footer .socials i{
+  color: #252422;
+  margin-right: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 3px;
+}
+
+footer .socials i:hover {
+  color: #403D39;
+  transition: 0.5s ease;
+}
+
+#page-header-m {
+  background-image: url(images/mens/image-landscape-fill-366cc54b-6c0d-4048-b102-720bf9ae7e4a-default_0.jpg);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 50% right 30%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#carousel-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--1x-gap);
+}
+
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.item {
+opacity: 0;
+width: 100%;
+height: 100%;
+display: none;
+transition: opacity 0.5s ease-in-out;
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+&.active {
+  opacity: 1;
+  display: block;
+}}
+
+.btn {
+  margin: 120px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  color: #ffff;
+  background-color: transparent;
+  transition: transform 0.2s ease-in-out;
+
+  &:active,
+  &:focus {
+    transform: translateY(-50%) scale(0.9);
+  }
+
+  &:hover {
+    transform: translateY(-50%) scale(0.96);
+  }
+}
+
+.prev {
+  left: -5%;
+}
+
+.next {
+  right: -5%;
+}
+
+#product3 h1 {
+  text-align: center;
+  padding: 10px;
+  margin: 20px 0px 20px 0;
+}
+
+#item-banner h4 {
+   font-weight: 200;
+}
+
+#item-banner h2 {
+  color: #252422;
+}
+
+#item-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 5px 40px 5px;
+}
+
+#item-banner .item-box {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  background-image: url("images/ladies/00595923407-a4.jpg");
+  min-width: 450px;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+#item-banner .item-box1 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  background-image: url("images/ladies/tops_main_img.jpg");
+  min-width: 450px;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+
+}
+
+#item-banner .item-box2 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  background-image: url("images/ladies/jackets_main_img.jpg");
+  min-width: 450px;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+#item-banner .item-box3 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  background-image: url("images/ladies/shoes_main.jpg");
+  min-width: 450px;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+#item-banner .item-box4 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  background-image: url("images/ladies/bags_main.jpg");
+  min-width: 450px;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+#item-banner:hover {
+  cursor: pointer;
+}
+
+#item-banner .item-box5 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  background-image: url("images/mens/men_shirt_main.jpg");
+  min-width: 450px;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+#item-banner .item-box6 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  background-image: url("images/mens/men_pants_main.jpg");
+  min-width: 450px;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+#item-banner .item-box7 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  background-image: url("images/mens/men_sweaters_main.jpg");
+  min-width: 450px;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+#item-banner .item-box8 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  background-image: url("images/mens/men_jacket_main.jpg");
+  min-width: 450px;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+#item-banner .item-box9 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  background-image: url("images/mens/men_shoes_main.jpg");
+  min-width: 450px;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px 20px;
+  display: flex;
+  position: relative;
+  width: 20%;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 40%;
+  height: 48vh;
+  border: 5px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.containrr:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #403D39;
+}
+
+.container a {
+  text-decoration: none;
+  color: #EB5E28;
+}
+
+.btn-log {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background-color: #403D39;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 40px;
+  color: #CCC5B9;
+}
+
+.btn-log:focus {
+ outline: 0;
+}
+
+.btn-log:active {
+  transform: scale(0.98);
+}
+
+.text {
+  margin: 30px;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px white solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: white;
+}
+
+.form-control input:focus, 
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus & label span, 
+.form-control input:valid & label span {
+  color: #CCC5B9;
+  transform: translateY(-30px);
+}
+
+
+@media (max-width:799px) {
+  .nav {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    height: 100vh;
+    width: 150px;
+    background-color: #E8E8EA;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.06);
+    padding: 80px 0 0 5px;
+    transition: 0.3s;
+  }
+
+  .nav.active {
+    right: 0px;
+  }
+
+  .nav li {
+    margin-bottom: 20px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #252422;
+    font-size: 15px;
+  }
+  
+  #product1 .pro-container {
+    justify-content: center;
+  }
+
+  #product1 .pro {
+   margin: 15px;
+  }
+  
+  #banner {
+    height: 30vh;
+    transition: 0.3s;
+  }
+
+  #sm-banner {
+    padding: 0px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 477px) {
+  #header {
+    padding: 10px 30px;
+  } 
+
+  .nav.active {
+    padding-right: 200px;
+  }
+
+  #hero {
+    padding: 0 20px; 
+    background-position: 70%;
+  }
+
+  #product1 .pro {
+    width: 100%;
+  }
+
+  #banner {
+    height: 45em
+  }
+
+  #banner h2 {
+    width: em;
+  }
+
+  #sm-banner {
+    margin-top: 20px;
+  }
+
+}
